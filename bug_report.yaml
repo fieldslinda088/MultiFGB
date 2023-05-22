@@ -6,7 +6,6 @@ body:
     attributes:
       value: Thank you for filing a bug report! 🐛
   - type: textarea
-    id: problem
     attributes:
       label: Summary
       description: >
@@ -33,7 +32,6 @@ body:
     attributes:
       label: Helix log
       description: See `hx -h` for log file path. If you can reproduce the issue run `RUST_BACKTRACE=1 hx -vv` to generate a more detailed log file.
-      value: |
         <details><summary>~/.cache/helix/helix.log</summary>
 
         ```
@@ -45,7 +43,6 @@ body:
     id: platform
     attributes:
       label: Platform
-      placeholder: Linux / macOS / Windows
     validations:
       required: true
   - type: input
